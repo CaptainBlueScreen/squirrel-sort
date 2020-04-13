@@ -1,0 +1,12 @@
+<p>sort-plotter works!</p>
+
+<svg viewBox="0	0	500	500">
+  <circle *ngFor="let point of points"
+    [attr.cx]="point.x"
+    [attr.cy]="point.y"
+    [attr.r]="point.r"
+    stroke="blue"
+    stroke-width="1"
+    fill="orange">
+  </circle>
+</svg>
