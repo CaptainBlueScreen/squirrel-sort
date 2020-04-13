@@ -1,0 +1,13 @@
+<p>sort-plotter works!</p>
+<button (click)="ngOnDestroy()">Click Me</button>
+
+<svg viewBox="0	0	500	300">
+  <circle *ngFor="let point of points"
+    [attr.cx]="point.x"
+    [attr.cy]="point.y"
+    [attr.r]="point.r"
+    [attr.stroke]="point.stroke"
+    [attr.fill]="point.fill"
+    stroke-width="1">
+  </circle>
+</svg>
